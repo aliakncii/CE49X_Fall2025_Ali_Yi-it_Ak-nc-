@@ -1,0 +1,58 @@
+Lab 4 — Statistical Report
+==========================
+
+[Concrete] Descriptive Statistics:
+           strength_mpa
+count        100.000000
+mean          35.060000
+median        34.200000
+mode          31.800000
+min           21.800000
+q1            31.100000
+q2_median     34.200000
+q3            39.125000
+max           47.100000
+range         25.300000
+var           37.978788
+std            6.162693
+iqr            8.025000
+skewness       0.047308
+kurtosis      -0.674736
+
+[Probability Scenarios]
+P(X=3) Binomial(100,0.05)   = 0.139576
+P(X<=5) Binomial(100,0.05)  = 0.615999
+P(X=8) Poisson(10)          = 0.112599
+P(X>15) Poisson(10)         = 0.048740
+P(X>280) Normal(250,15)     = 0.022750
+95th percentile of N(250,15) = 274.673
+P(fail<=500) Exp(mean=1000) = 0.393469
+P(survive>1500) Exp(mean=1000) = 0.223130
+
+[Bayes]
+P(Damage | +) = 0.3333
+P(+)          = 0.1425
+
+[Fit]
+Normal fit: mu=35.060, sigma=6.132
+
+[Extra Credit] Bootstrap:
+mean_hat=35.050, 95% CI=(33.814, 36.264)
+std_hat=6.120, 95% CI=(5.421, 6.785)
+
+[Extra Credit] Monte Carlo Reliability:
+pf = 0.000000  (kappa=10.0)
+
+[Extra Credit] GMM:
+status = ok
+weights = [0.5914481760341629, 0.408551823965837]
+means   = [31.202010634355222, 40.645095059227046]
+stds    = [4.113621776324731, 3.8460520609891518]
+
+[Extra Credit] Beta–Binomial:
+posterior Beta(8, 52)
+
+[Extra Credit] SPC Xbar-R:
+n*=10, Xbarbar=35.060, Rbar=13.500
+Xbar UCL=39.218, LCL=30.902
+R    UCL=23.989, LCL=3.010
